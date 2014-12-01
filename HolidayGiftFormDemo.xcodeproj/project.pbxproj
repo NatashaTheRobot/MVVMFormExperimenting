@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAAAAEFC1A2BB8230042F18C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAAEFB1A2BB8230042F18C /* AppDelegate.swift */; };
+		FAAAAF011A2BB8230042F18C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAAAEFF1A2BB8230042F18C /* Main.storyboard */; };
+		FAAAAF031A2BB8230042F18C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAAAF021A2BB8230042F18C /* Images.xcassets */; };
+		FAAAAF061A2BB8230042F18C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAAAF041A2BB8230042F18C /* LaunchScreen.xib */; };
+		FAAAAF121A2BB8230042F18C /* HolidayGiftFormDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAAF111A2BB8230042F18C /* HolidayGiftFormDemoTests.swift */; };
+		FAAAAF1F1A2BBA190042F18C /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAAF1E1A2BBA190042F18C /* Gift.swift */; };
+		FAAAAF261A2CA0930042F18C /* GiftFieldViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAAF251A2CA0930042F18C /* GiftFieldViewModelDelegate.swift */; };
+		FAAAAF281A2CA2FC0042F18C /* GiftRecipientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAAF271A2CA2FC0042F18C /* GiftRecipientViewModel.swift */; };
+		FAAAAF2B1A2CA5650042F18C /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAAF2A1A2CA5650042F18C /* GiftViewModel.swift */; };
+		FAAAAF2D1A2CA68D0042F18C /* GiftItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAAF2C1A2CA68D0042F18C /* GiftItemViewModel.swift */; };
+		FAAAAF2F1A2CA6FE0042F18C /* GiftBudgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAAF2E1A2CA6FE0042F18C /* GiftBudgetViewModel.swift */; };
+		FAAAAF311A2CA89F0042F18C /* GiftStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAAF301A2CA89F0042F18C /* GiftStatusViewModel.swift */; };
+		FAAAAF331A2CAD5A0042F18C /* CreateGiftTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAAF321A2CAD5A0042F18C /* CreateGiftTableViewController.swift */; };
+		FAAAAF351A2CAF6D0042F18C /* LabelAndTextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAAF341A2CAF6D0042F18C /* LabelAndTextInputTableViewCell.swift */; };
+		FAAAAF361A2CCEB30042F18C /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAAF1E1A2BBA190042F18C /* Gift.swift */; };
+		FAAAAF381A2CCEC90042F18C /* GiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAAF371A2CCEC90042F18C /* GiftTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAAAAF0C1A2BB8230042F18C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAAAAEEE1A2BB8230042F18C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAAAAEF51A2BB8230042F18C;
+			remoteInfo = HolidayGiftFormDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAAAAEF61A2BB8230042F18C /* HolidayGiftFormDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HolidayGiftFormDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAAAAEFA1A2BB8230042F18C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAAAEFB1A2BB8230042F18C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAAAAF001A2BB8230042F18C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAAAAF021A2BB8230042F18C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAAAAF051A2BB8230042F18C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FAAAAF0B1A2BB8230042F18C /* HolidayGiftFormDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolidayGiftFormDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAAAAF101A2BB8230042F18C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAAAF111A2BB8230042F18C /* HolidayGiftFormDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayGiftFormDemoTests.swift; sourceTree = "<group>"; };
+		FAAAAF1E1A2BBA190042F18C /* Gift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
+		FAAAAF251A2CA0930042F18C /* GiftFieldViewModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftFieldViewModelDelegate.swift; sourceTree = "<group>"; };
+		FAAAAF271A2CA2FC0042F18C /* GiftRecipientViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftRecipientViewModel.swift; sourceTree = "<group>"; };
+		FAAAAF2A1A2CA5650042F18C /* GiftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
+		FAAAAF2C1A2CA68D0042F18C /* GiftItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftItemViewModel.swift; sourceTree = "<group>"; };
+		FAAAAF2E1A2CA6FE0042F18C /* GiftBudgetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftBudgetViewModel.swift; sourceTree = "<group>"; };
+		FAAAAF301A2CA89F0042F18C /* GiftStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftStatusViewModel.swift; sourceTree = "<group>"; };
+		FAAAAF321A2CAD5A0042F18C /* CreateGiftTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGiftTableViewController.swift; sourceTree = "<group>"; };
+		FAAAAF341A2CAF6D0042F18C /* LabelAndTextInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelAndTextInputTableViewCell.swift; sourceTree = "<group>"; };
+		FAAAAF371A2CCEC90042F18C /* GiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAAAAEF31A2BB8230042F18C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAAAF081A2BB8230042F18C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAAAAEED1A2BB8230042F18C = {
+			isa = PBXGroup;
+			children = (
+				FAAAAEF81A2BB8230042F18C /* HolidayGiftFormDemo */,
+				FAAAAF0E1A2BB8230042F18C /* HolidayGiftFormDemoTests */,
+				FAAAAEF71A2BB8230042F18C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAAAAEF71A2BB8230042F18C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAAEF61A2BB8230042F18C /* HolidayGiftFormDemo.app */,
+				FAAAAF0B1A2BB8230042F18C /* HolidayGiftFormDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAAAAEF81A2BB8230042F18C /* HolidayGiftFormDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAAEFB1A2BB8230042F18C /* AppDelegate.swift */,
+				FAAAAEFF1A2BB8230042F18C /* Main.storyboard */,
+				FAAAAF1C1A2BB9EC0042F18C /* ViewControllers */,
+				FAAAAF201A2BBB4B0042F18C /* ViewModels */,
+				FAAAAF1B1A2BB9DA0042F18C /* Views */,
+				FAAAAF1D1A2BB9F70042F18C /* Models */,
+				FAAAAF021A2BB8230042F18C /* Images.xcassets */,
+				FAAAAF041A2BB8230042F18C /* LaunchScreen.xib */,
+				FAAAAEF91A2BB8230042F18C /* Supporting Files */,
+			);
+			path = HolidayGiftFormDemo;
+			sourceTree = "<group>";
+		};
+		FAAAAEF91A2BB8230042F18C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAAEFA1A2BB8230042F18C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAAAAF0E1A2BB8230042F18C /* HolidayGiftFormDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAAF111A2BB8230042F18C /* HolidayGiftFormDemoTests.swift */,
+				FAAAAF371A2CCEC90042F18C /* GiftTests.swift */,
+				FAAAAF0F1A2BB8230042F18C /* Supporting Files */,
+			);
+			path = HolidayGiftFormDemoTests;
+			sourceTree = "<group>";
+		};
+		FAAAAF0F1A2BB8230042F18C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAAF101A2BB8230042F18C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAAAAF1B1A2BB9DA0042F18C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAAF341A2CAF6D0042F18C /* LabelAndTextInputTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FAAAAF1C1A2BB9EC0042F18C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAAF321A2CAD5A0042F18C /* CreateGiftTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FAAAAF1D1A2BB9F70042F18C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAAF1E1A2BBA190042F18C /* Gift.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FAAAAF201A2BBB4B0042F18C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAAF2A1A2CA5650042F18C /* GiftViewModel.swift */,
+				FAAAAF291A2CA53D0042F18C /* GiftFieldViewModels */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		FAAAAF291A2CA53D0042F18C /* GiftFieldViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAAF271A2CA2FC0042F18C /* GiftRecipientViewModel.swift */,
+				FAAAAF2C1A2CA68D0042F18C /* GiftItemViewModel.swift */,
+				FAAAAF2E1A2CA6FE0042F18C /* GiftBudgetViewModel.swift */,
+				FAAAAF301A2CA89F0042F18C /* GiftStatusViewModel.swift */,
+				FAAAAF251A2CA0930042F18C /* GiftFieldViewModelDelegate.swift */,
+			);
+			name = GiftFieldViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAAAAEF51A2BB8230042F18C /* HolidayGiftFormDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAAAAF151A2BB8230042F18C /* Build configuration list for PBXNativeTarget "HolidayGiftFormDemo" */;
+			buildPhases = (
+				FAAAAEF21A2BB8230042F18C /* Sources */,
+				FAAAAEF31A2BB8230042F18C /* Frameworks */,
+				FAAAAEF41A2BB8230042F18C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HolidayGiftFormDemo;
+			productName = HolidayGiftFormDemo;
+			productReference = FAAAAEF61A2BB8230042F18C /* HolidayGiftFormDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAAAAF0A1A2BB8230042F18C /* HolidayGiftFormDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAAAAF181A2BB8230042F18C /* Build configuration list for PBXNativeTarget "HolidayGiftFormDemoTests" */;
+			buildPhases = (
+				FAAAAF071A2BB8230042F18C /* Sources */,
+				FAAAAF081A2BB8230042F18C /* Frameworks */,
+				FAAAAF091A2BB8230042F18C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAAAAF0D1A2BB8230042F18C /* PBXTargetDependency */,
+			);
+			name = HolidayGiftFormDemoTests;
+			productName = HolidayGiftFormDemoTests;
+			productReference = FAAAAF0B1A2BB8230042F18C /* HolidayGiftFormDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAAAAEEE1A2BB8230042F18C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = NatashaTheRobot;
+				TargetAttributes = {
+					FAAAAEF51A2BB8230042F18C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					FAAAAF0A1A2BB8230042F18C = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = FAAAAEF51A2BB8230042F18C;
+					};
+				};
+			};
+			buildConfigurationList = FAAAAEF11A2BB8230042F18C /* Build configuration list for PBXProject "HolidayGiftFormDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAAAAEED1A2BB8230042F18C;
+			productRefGroup = FAAAAEF71A2BB8230042F18C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAAAAEF51A2BB8230042F18C /* HolidayGiftFormDemo */,
+				FAAAAF0A1A2BB8230042F18C /* HolidayGiftFormDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAAAAEF41A2BB8230042F18C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAAAF011A2BB8230042F18C /* Main.storyboard in Resources */,
+				FAAAAF061A2BB8230042F18C /* LaunchScreen.xib in Resources */,
+				FAAAAF031A2BB8230042F18C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAAAF091A2BB8230042F18C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAAAAEF21A2BB8230042F18C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAAAF2B1A2CA5650042F18C /* GiftViewModel.swift in Sources */,
+				FAAAAF331A2CAD5A0042F18C /* CreateGiftTableViewController.swift in Sources */,
+				FAAAAF281A2CA2FC0042F18C /* GiftRecipientViewModel.swift in Sources */,
+				FAAAAEFC1A2BB8230042F18C /* AppDelegate.swift in Sources */,
+				FAAAAF2D1A2CA68D0042F18C /* GiftItemViewModel.swift in Sources */,
+				FAAAAF2F1A2CA6FE0042F18C /* GiftBudgetViewModel.swift in Sources */,
+				FAAAAF351A2CAF6D0042F18C /* LabelAndTextInputTableViewCell.swift in Sources */,
+				FAAAAF1F1A2BBA190042F18C /* Gift.swift in Sources */,
+				FAAAAF311A2CA89F0042F18C /* GiftStatusViewModel.swift in Sources */,
+				FAAAAF261A2CA0930042F18C /* GiftFieldViewModelDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAAAF071A2BB8230042F18C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAAAF121A2BB8230042F18C /* HolidayGiftFormDemoTests.swift in Sources */,
+				FAAAAF361A2CCEB30042F18C /* Gift.swift in Sources */,
+				FAAAAF381A2CCEC90042F18C /* GiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAAAAF0D1A2BB8230042F18C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAAAAEF51A2BB8230042F18C /* HolidayGiftFormDemo */;
+			targetProxy = FAAAAF0C1A2BB8230042F18C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAAAAEFF1A2BB8230042F18C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAAAAF001A2BB8230042F18C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAAAAF041A2BB8230042F18C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAAAAF051A2BB8230042F18C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAAAAF131A2BB8230042F18C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAAAAF141A2BB8230042F18C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAAAAF161A2BB8230042F18C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HolidayGiftFormDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAAAAF171A2BB8230042F18C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HolidayGiftFormDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAAAAF191A2BB8230042F18C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HolidayGiftFormDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HolidayGiftFormDemo.app/HolidayGiftFormDemo";
+			};
+			name = Debug;
+		};
+		FAAAAF1A1A2BB8230042F18C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HolidayGiftFormDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HolidayGiftFormDemo.app/HolidayGiftFormDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAAAAEF11A2BB8230042F18C /* Build configuration list for PBXProject "HolidayGiftFormDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAAAF131A2BB8230042F18C /* Debug */,
+				FAAAAF141A2BB8230042F18C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAAAAF151A2BB8230042F18C /* Build configuration list for PBXNativeTarget "HolidayGiftFormDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAAAF161A2BB8230042F18C /* Debug */,
+				FAAAAF171A2BB8230042F18C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAAAAF181A2BB8230042F18C /* Build configuration list for PBXNativeTarget "HolidayGiftFormDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAAAF191A2BB8230042F18C /* Debug */,
+				FAAAAF1A1A2BB8230042F18C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAAAAEEE1A2BB8230042F18C /* Project object */;
+}

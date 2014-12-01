@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tRT-2W-SXS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gift List-->
+        <scene sceneID="w07-qo-35j">
+            <objects>
+                <tableViewController id="Vqg-4y-FwD" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Zgc-8G-okE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0vH-rf-uNP">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0vH-rf-uNP" id="xkr-4H-FXz">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Vqg-4y-FwD" id="Hhk-nG-PrA"/>
+                            <outlet property="delegate" destination="Vqg-4y-FwD" id="9I9-xP-BXu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Gift List" id="VaM-fn-cix">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RZf-IQ-SFA">
+                            <connections>
+                                <segue destination="8Db-MJ-ujZ" kind="show" id="lq4-8E-767"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Egl-Ch-zfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="91"/>
+        </scene>
+        <!--Add Gift-->
+        <scene sceneID="dEO-Rl-oh9">
+            <objects>
+                <tableViewController title="Add Gift" id="8Db-MJ-ujZ" customClass="CreateGiftTableViewController" customModule="HolidayGiftFormDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" sectionHeaderHeight="22" sectionFooterHeight="22" id="LJR-8M-24W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LabelAndTextInputTableViewCell" rowHeight="68" id="TU6-En-cf9" customClass="LabelAndTextInputTableViewCell" customModule="HolidayGiftFormDemo" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TU6-En-cf9" id="UOU-jD-Hsx">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h5-ln-UEp">
+                                            <rect key="frame" x="15" y="8" width="42" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dD3-Ag-DUT">
+                                            <rect key="frame" x="15" y="33.5" width="584" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dD3-Ag-DUT" firstAttribute="top" secondItem="7h5-ln-UEp" secondAttribute="bottom" constant="5" id="8H6-TG-A1C"/>
+                                        <constraint firstItem="7h5-ln-UEp" firstAttribute="leading" secondItem="UOU-jD-Hsx" secondAttribute="leadingMargin" constant="7" id="Rd8-u9-tlf"/>
+                                        <constraint firstItem="dD3-Ag-DUT" firstAttribute="trailing" secondItem="UOU-jD-Hsx" secondAttribute="trailingMargin" constant="7" id="cDR-Q7-iN8"/>
+                                        <constraint firstItem="7h5-ln-UEp" firstAttribute="top" secondItem="UOU-jD-Hsx" secondAttribute="topMargin" id="ch7-WR-P6Y"/>
+                                        <constraint firstItem="dD3-Ag-DUT" firstAttribute="leading" secondItem="UOU-jD-Hsx" secondAttribute="leadingMargin" constant="7" id="iui-CR-XM9"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="textField" destination="dD3-Ag-DUT" id="sFG-k3-bcH"/>
+                                    <outlet property="titleLabel" destination="7h5-ln-UEp" id="TWj-5I-HIa"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8Db-MJ-ujZ" id="6YZ-ON-Qkx"/>
+                            <outlet property="delegate" destination="8Db-MJ-ujZ" id="1Kt-bF-hMP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Gift" id="ITD-O0-epI">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="1C6-Cg-5ZH"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KwC-We-b1C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1271" y="91"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sUq-Xf-KZX">
+            <objects>
+                <navigationController id="tRT-2W-SXS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R3a-3z-iYe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vqg-4y-FwD" kind="relationship" relationship="rootViewController" id="PcG-Np-v3V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIt-WI-wyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194" y="91"/>
+        </scene>
+    </scenes>
+</document>
